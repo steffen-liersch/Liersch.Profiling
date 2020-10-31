@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net45;net47;netcoreapp2.0;netcoreapp3.0;netcoreapp3.1;netstandard2.0</TargetFrameworks>
+    <LangVersion>6</LangVersion>
+    <AssemblyName>Liersch.Profiling.Demo</AssemblyName>
+    <RootNamespace>Liersch.Profiling.Demo</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Liersch.Profiling\Liersch.Profiling.csproj" />
+  </ItemGroup>
+
+</Project>

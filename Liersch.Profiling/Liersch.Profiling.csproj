@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;net47;netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;netstandard2.0</TargetFrameworks>
+    <LangVersion>6</LangVersion>
+    <NoWarn>1701;1702;1591</NoWarn>
+    <NeutralLanguage>en</NeutralLanguage>
+    <RootNamespace>Liersch.Profiling</RootNamespace>
+    <AssemblyName>Liersch.Profiling</AssemblyName>
+    <AssemblyOriginatorKeyFile>Liersch.Profiling.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <PackageId>Liersch.Profiling</PackageId>
+    <Authors>Steffen Liersch</Authors>
+    <Company>Steffen Liersch</Company>
+    <Copyright>© 2020 Steffen Liersch</Copyright>
+    <Product>Liersch.Profiling</Product>
+    <Description>.NET library for measuring the performance of functions</Description>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>beta</VersionSuffix>
+    <PackageTags>measuring profiling testing</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/steffen-liersch/Liersch.Profiling</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/steffen-liersch/Liersch.Profiling</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+
+    <AssemblyTitle>$(Description)</AssemblyTitle>
+    <VersionSuffix Condition="'$(VersionSuffix)'!='' AND '$(GITHUB_RUN_ID)'!=''">$(VersionSuffix)-$(GITHUB_RUN_ID)</VersionSuffix>
+    <CheckForOverflowUnderflow Condition="'$(Configuration)'=='Debug'">true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+</Project>
