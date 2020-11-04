@@ -22,6 +22,8 @@
     <PackageTags>measuring profiling testing</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageIcon>Liersch-Logo-128px.png</PackageIcon>
+    <PackageIconUrl>https://www.steffen-liersch.de/files/images/Liersch-Logo-128px.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/steffen-liersch/Liersch.Profiling</PackageProjectUrl>
     <RepositoryUrl>https://github.com/steffen-liersch/Liersch.Profiling</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
@@ -32,7 +34,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\LICENSE.txt" Pack="true" PackagePath="" />
+    <None Pack="true" PackagePath="" Include="..\LICENSE.txt" Link="doc\LICENSE.txt" />
+    <None Pack="true" PackagePath="" Include="..\Liersch-Logo-128px.png" Link="doc\Liersch-Logo-128px.png" />
+    <None Pack="true" PackagePath="" Include="..\Liersch-Logo-Notice.txt" Link="doc\Liersch-Logo-Notice.txt" />
+    <None Pack="true" PackagePath="" Include="..\README.md" Link="doc\README.md" />
   </ItemGroup>
 
 </Project>
