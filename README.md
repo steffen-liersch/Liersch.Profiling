@@ -55,7 +55,7 @@ static class Tests
 }
 ```
 
-The `RunTests` function of the` MeasuringTools` class is used to automatically call test functions. The description texts and measurement results are printed on the console. If a class only contains static test functions, it is sufficient to pass the type instead of an instance.
+The `RunTests` function of the` MeasuringTools` class is used to automatically call test functions. The description texts and measurement results are printed on the console. If a class only contains static test functions or has a standard constructor, it is sufficient to pass the type instead of an instance.
 
 ```cs
 MeasuringTools.RunTests(typeof(Tests));
