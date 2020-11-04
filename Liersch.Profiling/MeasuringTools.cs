@@ -74,9 +74,15 @@ namespace Liersch.Profiling
           if(mi.GetParameters().Length>0 || mi.ReturnType!=typeof(MeasuringData[]))
             throw new InvalidOperationException("Function has an unexpected signature ("+mi.DeclaringType.FullName+"."+mi.Name+")");
 
-          var d=mi.IsStatic
-            ? Delegate.CreateDelegate(typeof(Func<MeasuringData[]>), mi, true)
-            : Delegate.CreateDelegate(typeof(Func<MeasuringData[]>), inst, mi, true);
+          Delegate d;
+          if(mi.IsStatic)
+            d=Delegate.CreateDelegate(typeof(Func<MeasuringData[]>), mi, true);
+          else
+          {
+            if(inst==null)
+              inst=Activator.CreateInstance(type);
+            d=Delegate.CreateDelegate(typeof(Func<MeasuringData[]>), inst, mi, true);
+          }
 
           var ma=(MeasuringAttribute)mas[0];
           ma.TestFunction=(Func<MeasuringData[]>)d;
