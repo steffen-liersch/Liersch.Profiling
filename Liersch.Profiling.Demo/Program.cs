@@ -16,6 +16,15 @@ namespace Liersch.Profiling.Demo
     {
       try
       {
+#if DEBUG
+        Console.WriteLine("Debug version");
+#else
+        Console.WriteLine("Release version");
+#endif
+
+        Console.WriteLine("Debugger present: "+(Debugger.IsAttached ? "yes" : "no"));
+        Console.WriteLine();
+
         Console.WriteLine("Stopwatch based on high-resolution performance counter: "+(Stopwatch.IsHighResolution ? "yes" : "no"));
         Console.WriteLine("Stopwatch timer frequency: "+Formatter.FormatDecimal(Stopwatch.Frequency, 1, "Hz"));
         Console.WriteLine();
