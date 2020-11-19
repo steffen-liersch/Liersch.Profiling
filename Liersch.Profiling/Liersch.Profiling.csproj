@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>net45;net47;netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;netstandard2.0</TargetFrameworks>
     <LangVersion>6</LangVersion>
-    <NoWarn>1701;1702;1591</NoWarn>
+    <NoWarn>1591</NoWarn>
     <NeutralLanguage>en</NeutralLanguage>
     <RootNamespace>Liersch.Profiling</RootNamespace>
     <AssemblyName>Liersch.Profiling</AssemblyName>
@@ -19,7 +19,7 @@
     <Description>.NET library for measuring the performance of functions</Description>
     <VersionPrefix>1.0.0</VersionPrefix>
     <VersionSuffix>beta</VersionSuffix>
-    <PackageTags>measuring profiling testing</PackageTags>
+    <PackageTags>measuring optimization performance profiling testing timing</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageIcon>Liersch-Logo-128px.png</PackageIcon>
