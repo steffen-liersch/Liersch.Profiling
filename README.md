@@ -76,7 +76,7 @@ Console.WriteLine("Score: "+Formatter.FormatDecimal(md.Score, 1, "Hz"));
 
 ## Copyright
 
-Copyright © 2020 Steffen Liersch  
+Copyright © 2020-2021 Steffen Liersch  
 https://www.steffen-liersch.de/
 
 ## Links

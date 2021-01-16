@@ -14,7 +14,7 @@
     <PackageId>Liersch.Profiling</PackageId>
     <Authors>Steffen Liersch</Authors>
     <Company>Steffen Liersch</Company>
-    <Copyright>© 2020 Steffen Liersch</Copyright>
+    <Copyright>© 2020-2021 Steffen Liersch</Copyright>
     <Product>Liersch.Profiling</Product>
     <Description>.NET library for measuring the performance of functions</Description>
     <VersionPrefix>1.0.0</VersionPrefix>
