@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net45;net47;netcoreapp2.0;netcoreapp3.0;netcoreapp3.1;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net45;net47;net48;netcoreapp2.0;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
     <LangVersion>6</LangVersion>
     <AssemblyName>Liersch.Profiling.Demo</AssemblyName>
     <RootNamespace>Liersch.Profiling.Demo</RootNamespace>
