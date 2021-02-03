@@ -18,7 +18,7 @@
     <Product>Liersch.Profiling</Product>
     <Description>.NET library for measuring the performance of functions</Description>
     <VersionPrefix>1.0.0</VersionPrefix>
-    <VersionSuffix>beta</VersionSuffix>
+    <VersionSuffix></VersionSuffix>
     <PackageTags>measuring optimization performance profiling testing timing</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
