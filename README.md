@@ -2,7 +2,7 @@
 
 # Liersch.Profiling
 
-The .NET library `Liersch.Profiling` includes functions for measuring the execution time of functions. All major .NET platforms are supported (from .NET Framework 4.5, from .NET Core 2.0 and from .NET Standard 2.0). All major changes are logged in the [CHANGELOG.md](https://github.com/steffen-liersch/Liersch.Profiling/blob/main/CHANGELOG.md) file.
+The .NET library `Liersch.Profiling` includes functions for measuring the execution time of functions. All major .NET platforms are supported (from .NET Framework 4.0, from .NET Core 2.0 and from .NET Standard 2.0). All major changes are logged in the [CHANGELOG.md](https://github.com/steffen-liersch/Liersch.Profiling/blob/main/CHANGELOG.md) file.
 
 ## Time Measurement
 
